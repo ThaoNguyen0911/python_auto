@@ -11,4 +11,4 @@ print(f'\nTitle web: {driver.title}')
 driver.refresh()
 time.sleep(3)  # Wait to observe the refresh
 print(f'Title web: {driver.title}')
-driver.quit()
+driver.close()
