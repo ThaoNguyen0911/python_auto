@@ -7,5 +7,5 @@ class BaseTest:
         self.driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         self.driver.maximize_window()
         request.cls.driver = self.driver
-        yeild
+        yield
         self.driver.quit()

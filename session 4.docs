@@ -1,0 +1,11 @@
+About Element
+    Web pages are written in a mixed of HTML, CSS and Javascripts
+Selenium provides the following methods to locate elements in a page
+find_element: 1 of 1
+find_elements: list of web elements
+*By XPATH
+XPATH = //tagname[@attribute='Value']
+*By.LINK_TEXT: dùng cho thẻ a
+*By.TAG_NAME: dùng cho tag name, nên dùng cho thẻ duy nhất
+*By.CLASS_NAME: dùng cho class 
+*By.CSS_SELECTOR: dùng cho css 
