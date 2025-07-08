@@ -9,3 +9,29 @@ XPATH = //tagname[@attribute='Value']
 *By.TAG_NAME: dùng cho tag name, nên dùng cho thẻ duy nhất
 *By.CLASS_NAME: dùng cho class 
 *By.CSS_SELECTOR: dùng cho css 
+
+---------session 6-----------
+Dropdown list: from selenium.webdriver.support.ui import Select 
+                select.select_by_visible_text #text
+                select.select_by_value  #value
+    notes: Select chỉ dùng được cho thẻ select
+get_attribute()
+
+--------session 7------------
+Implicit wait is set for the life of the WebDriver object -> không linh động, tốn thời gian nếu webdriver đã load xong
+Explicit wait sẽ chờ đến khi xuất hiện element và đi tiếp dù chưa hết thời gian -> linh động hơn
+
+--------session 8-----------
+form: <form> tag in HTML. Can use method click() and submit()
+switch to window: moving between these windows using switch_to.window()
+alert and popup: switch_to.alert()
+cookie: call api without login
+action chains: 
+-----
+run allure: pytest your_test_file.py --alluredir=report/
+view report: allure serve report/
+
+--------API Testing----------
+lỗi 401 -> API chưa được authorize
+
+vào header lấy url paste vào def

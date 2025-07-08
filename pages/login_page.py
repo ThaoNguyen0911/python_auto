@@ -24,7 +24,12 @@ class LoginPage():
         password_input.send_keys(password)
     def click_login_button(self):
         self.driver.find_element(*self.login_btn).click()
-    
+
+    def do_login(self, username, password):
+        self.enter_username(username)
+        self.enter_password(password)
+        self.click_login_button()
+
     def get_dashboard_text(self):
         get_text = WebDriverWait(self.driver, self.timeout).until(
             lambda d: d.find_element(*self.get_text)

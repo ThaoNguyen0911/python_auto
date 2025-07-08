@@ -3,5 +3,19 @@
     "username": "Admin",
     "password": "admin123",
     "timeout": 10,
-    "browsers": "Chrome"
+    "browsers": "Chrome",
+    "new_user":{
+        "user_role": "Admin",
+        "status": "Enabled",
+        "employee_name": "a",
+        "username_add": "Demo_User 091100000",
+        "password_add": "Test123.",
+        "password_add_again": "Test123."
+    },
+    "new_vacancy":{
+        "vacancy_name": "Automation Tester 0107",
+        "job_title": "Automation Tester",
+        "description": "Automation Test is running",
+        "number_position": "1"
+    }
 }

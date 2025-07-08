@@ -23,5 +23,18 @@ class ConfigReader:
     @staticmethod
     def get_password():
         return ConfigReader.load_config()['password']
+    
+    @staticmethod
+    def new_user():
+        return ConfigReader.load_config()['new_user']
+    
+    @staticmethod
+    def new_vacancy():
+        return ConfigReader.load_config()['new_vacancy']
+        
+
+    
+
+
 
 
