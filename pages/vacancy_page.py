@@ -38,7 +38,7 @@ class VacancyPage(BasePage):
 
     def click_recruitment_menu(self):
         recruitment_nenu = WebDriverWait(self.driver, self.timeout).until(
-            lambda d: d.find_element(*self.recruitment_menu)
+            EC.element_to_be_clickable(self.recruitment_menu)
         )
         recruitment_nenu.click()
     

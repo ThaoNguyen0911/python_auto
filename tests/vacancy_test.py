@@ -12,8 +12,7 @@ class TestVacancy(BaseTest):
         vacancy_page = VacancyPage(self.driver)
         login_page = LoginPage(self.driver)
         login_page.do_login("Admin", "admin123")
-        sleep(5)
-        # 
+        self.driver.implicitly_wait(15)
         vacancy_page.click_recruitment_menu()
         vacancy_page.click_vacancy_tag()
         sleep(5)
