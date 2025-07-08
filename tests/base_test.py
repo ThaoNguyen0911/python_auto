@@ -18,7 +18,7 @@ class BaseTest:
         request.cls.session = session
         options = webdriver.ChromeOptions()
         # options.add_argument("--headless")
-        # options.add_argument("--no-sandbox")
+        options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         # Initialize the Chrome WebDriver instance
         self.driver = webdriver.Chrome(options=options)
