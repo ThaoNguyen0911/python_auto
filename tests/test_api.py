@@ -12,7 +12,7 @@ class TestApiLocation(BaseTest):
         self.driver.get(
             "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
         )
-        self.driver.implicitly_wait(5)
+        self.driver.implicitly_wait(15)
         # Find the username, password fields, and submit button
         try:
             username_field = self.driver.find_element(By.NAME, "username")
@@ -28,7 +28,7 @@ class TestApiLocation(BaseTest):
         username_field.send_keys("Admin")
         password_field.send_keys("admin123")
         submit_button.click()
-        self.driver.implicitly_wait(5)
+        self.driver.implicitly_wait(15)
 
         for cookie in self.driver.get_cookies():
             self.session.cookies.set(cookie["name"], cookie["value"])
