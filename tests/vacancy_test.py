@@ -1,6 +1,5 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from .base_test import BaseTest
 from utils.read_config import ConfigReader
 from pages.vacancy_page import VacancyPage
