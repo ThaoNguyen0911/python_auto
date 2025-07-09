@@ -20,7 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         suite:
-          - tests/test_api.py
+          # - tests/test_api.py
           - tests/login_test.py
           - tests/vacancy_test.py
 

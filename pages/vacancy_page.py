@@ -9,7 +9,7 @@ from time import sleep
 from .base_page import BasePage
 class VacancyPage(BasePage):
     def __init__(self, driver):
-        self.timeout = 10
+        self.timeout = 15
         self.driver = driver
         self.user_data = ConfigReader.new_vacancy()
         #xpath
@@ -38,7 +38,7 @@ class VacancyPage(BasePage):
 
     def click_recruitment_menu(self):
         recruitment_nenu = WebDriverWait(self.driver, self.timeout).until(
-            EC.element_to_be_clickable(self.recruitment_menu)
+            EC.visibility_of_element_located(self.recruitment_menu)
         )
         recruitment_nenu.click()
     

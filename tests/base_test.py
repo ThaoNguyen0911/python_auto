@@ -16,12 +16,12 @@ class BaseTest:
     def setup(self, request):
         session = requests.Session()
         request.cls.session = session
-        options = webdriver.ChromeOptions()
-        options.add_argument("--headless=new")
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
+        # options = webdriver.ChromeOptions()
+        # options.add_argument("--headless")
+        # options.add_argument("--no-sandbox")
+        # options.add_argument("--disable-dev-shm-usage")
         # Initialize the Chrome WebDriver instance
-        self.driver = webdriver.Chrome(options=options)
+        self.driver = webdriver.Chrome()
         self.driver.get(ConfigReader.get_base_url())
         self.driver.maximize_window()
         request.cls.driver = self.driver

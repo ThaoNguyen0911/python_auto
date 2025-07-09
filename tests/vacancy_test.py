@@ -5,6 +5,8 @@ from utils.read_config import ConfigReader
 from pages.vacancy_page import VacancyPage
 from pages.login_page import LoginPage
 from time import sleep
+@pytest.mark.usefixtures("setup")
+
 class TestVacancy(BaseTest):
     
     def test_vacancy(self):
